@@ -22,37 +22,32 @@ boundaryField
 {
     inlet
     {
-		//type			zeroGradient;
         type            fixedFluxPressure;
-		value			uniform 0;
+		gradient        uniform 0;
+        value           uniform 0;
     }
     outlet
-    {
-		type            totalPressure;
-        p0              uniform 0;
-        //U               U;
-        //rho             rho_0;
-		
-		
-	    //type            fixedValue;
-        //value           uniform 0;
-		
-	    //type            fixedFluxPressure;
-		//value			uniform 0;
-        //type            inletOutlet;  //outletInlet
-		//inletValue		uniform 0;
+    {		
+	    type            fixedValue;
+        value           uniform 0;
     }
     Wall_side
     {
-		type			zeroGradient;
+        type            fixedFluxPressure;
+		gradient        uniform 0;
+        value           uniform 0;
     }
     Wall_out
     {
-		type			zeroGradient;
+        type            fixedFluxPressure;
+		gradient        uniform 0;
+        value           uniform 0;
     }
     Wall_inside
     {
-		type			zeroGradient;
+        type            fixedFluxPressure;
+		gradient        uniform 0;
+        value           uniform 0;
     }
 
 
